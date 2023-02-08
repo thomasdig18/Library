@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library
-    </title>
+    <title>Library</title>
 </head>
 <body>
-    
+    <form id="book-form">
+        <div>
+          <label for="title-input">Title:</label>
+          <input type="text" id="title-input">
+        </div>
+        <div>
+          <label for="author-input">Author:</label>
+          <input type="text" id="author-input">
+        </div>
+        <div>
+          <label for="pages-input">Pages:</label>
+          <input type="number" id="pages-input">
+        </div>
+        <div>
+          <label for="read-input">Read:</label>
+          <input type="checkbox" id="read-input">
+        </div>
+        <button type="button" id="add-button">Add Book</button>
+      </form>
+      
+    <script src="app.js"></script>
 </body>
 </html>
