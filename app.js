@@ -29,3 +29,43 @@ function Book(title, author, pages, read) {
     pagesInput.value = "";
     readInput.checked = false;
   });
+
+
+const display = document.querySelector(".display");
+
+function addToDisplay() {
+  display.innerHTML = "";
+  
+  for (let i = 0; i < myLibrary.length; i++) {
+    const book = myLibrary[i];
+    
+    const div = document.createElement("div");
+    div.classList.add("book");
+    
+    const titleP = document.createElement("p");
+    titleP.innerHTML = `Title: ${book.title}`;
+    div.appendChild(titleP);
+    
+    const authorP = document.createElement("p");
+    authorP.innerHTML = `Author: ${book.author}`;
+    div.appendChild(authorP);
+    
+    const pagesP = document.createElement("p");
+    pagesP.innerHTML = `Pages: ${book.pages}`;
+    div.appendChild(pagesP);
+    
+    const readP = document.createElement("p");
+    readP.innerHTML = `Read: ${book.read}`;
+    div.appendChild(readP);
+    
+    display.appendChild(div);
+  }
+}
+
+addButton.addEventListener("click", function() {
+  
+  
+  addToDisplay();
+});
+
+addToDisplay();
