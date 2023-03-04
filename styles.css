@@ -3,14 +3,39 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: rgb(167, 60, 60);
+    font-size: 20px;
+}
+
+#book-form {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+    padding: 30px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+
+input:hover {
+    border-color: rgba(173, 57, 57, 0.719);
 }
 
 .display {
     width: 100%;
     height: 500px;
     background-color: beige;
+    display: inline-block;
+}
+
+.book-card {
+    width: 10%;
     
-
-
-
+    background-color: rgb(209, 177, 117);
+    margin-right: none;
+    font-size: 16px;
+    text-align: center;
 }

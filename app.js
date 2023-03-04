@@ -5,12 +5,12 @@ function Book(title, author, pages, read) {
     this.read = read;
   }
   
-  const myLibrary = [];
+const myLibrary = [];
   
-  const form = document.querySelector("#book-form");
-  const addButton = document.querySelector("#add-button");
+const form = document.querySelector("#book-form");
+const addButton = document.querySelector("#add-button");
   
-  addButton.addEventListener("click", function() {
+addButton.addEventListener("click", function() {
     const titleInput = document.querySelector("#title-input");
     const authorInput = document.querySelector("#author-input");
     const pagesInput = document.querySelector("#pages-input");
@@ -40,7 +40,7 @@ function addToDisplay() {
     const book = myLibrary[i];
     
     const div = document.createElement("div");
-    div.classList.add("book");
+    div.classList.add("book-card");
     
     const titleP = document.createElement("p");
     titleP.innerHTML = `Title: ${book.title}`;
@@ -69,3 +69,4 @@ addButton.addEventListener("click", function() {
 });
 
 addToDisplay();
+
