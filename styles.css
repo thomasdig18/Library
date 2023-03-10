@@ -39,3 +39,11 @@ input:hover {
     font-size: 16px;
     text-align: center;
 }
+
+.read-toggle {
+    width: 50px;
+    height: 2em;
+    color: white;
+    background-color: red;
+}
+

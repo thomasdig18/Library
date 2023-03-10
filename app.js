@@ -58,6 +58,11 @@ function addToDisplay() {
     readP.innerHTML = `Read: ${book.read}`;
     div.appendChild(readP);
     
+    const readButton = document.createElement('button');
+    readButton.classList.add('read-toggle')
+    div.appendChild(readButton);
+
+    
     display.appendChild(div);
   }
 }
