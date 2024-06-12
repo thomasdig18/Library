@@ -21,14 +21,15 @@ input {
 
 
 input:hover {
-    border-color: rgba(173, 57, 57, 0.719);
+    border-color: rgba(39, 35, 35, 0.719);
 }
 
 .display {
     width: 100%;
-    height: 500px;
-    background-color: beige;
+    height: 800px;
+    background-color: rgba(53, 49, 49, 0.849);
     display: inline-block;
+    box-shadow: 5px 5px 5px 5px rgba(31, 29, 29, 0.2);
 }
 
 .book-card {
