@@ -14,6 +14,7 @@ function Book(title, author, pages, isread) {
 function addBookToLibrary(title, author, pages, isread) {
   let newBook = new Book(title, author, pages, isread);
   myLibrary.push(newBook);
+  console.log(myLibrary);
 }
 
 
@@ -21,5 +22,19 @@ function addBookToLibrary(title, author, pages, isread) {
 // when it is clicked
 const addbtn = document.querySelector("#add-button");
 addbtn.addEventListener("click", () => {
-  addBookToLibrary;
-})
+  
+  const title = document.querySelector("#title-input").value;
+  const author = document.querySelector("#author-input").value;
+  const pages = document.querySelector("#pages-input").value;
+  const isread = document.querySelector("#read-input").checked;
+
+  addBookToLibrary(title, author, pages, isread);
+
+  document.querySelector("#title-input").value = " ";
+  document.querySelector("#author-input").value = " ";
+  document.querySelector("#pages-input").value = "";
+  document.querySelector("#read-input").checked = false;
+
+});
+
+//Figure out how to connect the inputs to the book object now
