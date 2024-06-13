@@ -19,7 +19,7 @@ function addBookToLibrary(title, author, pages, isread) {
 
 // This creates the add button variable and performs the addBookToLibrary function
 // when it is clicked
-const addbtn = document.queryselector("#add-button");
+const addbtn = document.querySelector("#add-button");
 addbtn.addEventListener("click", () => {
   addBookToLibrary;
 })
