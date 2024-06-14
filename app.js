@@ -15,6 +15,7 @@ function addBookToLibrary(title, author, pages, isread) {
   let newBook = new Book(title, author, pages, isread);
   myLibrary.push(newBook);
   console.log(myLibrary);
+  displayLibrary();
 }
 
 
@@ -27,7 +28,7 @@ addbtn.addEventListener("click", () => {
   const author = document.querySelector("#author-input").value;
   const pages = document.querySelector("#pages-input").value;
   const isread = document.querySelector("#read-input").checked;
-
+  
   addBookToLibrary(title, author, pages, isread);
 
   document.querySelector("#title-input").value = " ";
@@ -37,4 +38,21 @@ addbtn.addEventListener("click", () => {
 
 });
 
-//Figure out how to connect the inputs to the book object now
+// Loop through the myLibrary array and display them on the page
+// For each?
+const displayContainer = document.getElementById('display');
+
+function displayLibrary(){
+myLibrary.forEach(element => {
+  
+  
+  let div = document.createElement('div');
+
+
+  div.textContent = element;
+
+  displayContainer.appendChild(div);
+}
+)
+}
+
